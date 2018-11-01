@@ -1,8 +1,35 @@
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Panton";
+    src: url("../fonts/Panton/Panton-Regular.woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Panton";
+    src: url("../fonts/Panton/Panton-SemiBold.woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Panton";
+    src: url("../fonts/Panton/Panton-Bold.woff");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: #{$default-font-size}px;
 }
 body {
-    font-family: sans-serif;
+    font-family: "Panton", sans-serif;
+    font-size: 16px;
+
     font-weight: 400;
     display: flex;
     min-height: 100vh;

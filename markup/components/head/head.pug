@@ -13,6 +13,8 @@ mixin head(data)
     |<!--[if IE 9 ]><link href="%=static=%css/main_ie9%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><![endif]-->
     |<!--[if (gt IE 9)|!(IE)]><!--><link href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css"><!--<![endif]-->
 
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.4.2/css/all.css", integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns", crossorigin="anonymous")
+
     if data.useSocialMetaTags
         meta(property="og:title", content="#{data.title}")
         meta(property="og:title", content="")

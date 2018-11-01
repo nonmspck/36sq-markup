@@ -1,0 +1,7 @@
+.header {
+    position: relative;
+
+    @media (min-width: $grid-sl) {
+        height: 100vh;
+    }
+}

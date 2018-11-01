@@ -14,6 +14,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <meta property="og:title" content="#{data.title}">
         <meta property="og:title" content="">
         <meta property="og:url" content="">
@@ -31,7 +32,60 @@
     </head>
 
     <body>
-        <div class="block">123</div>
+        <header class="header">
+            <section class="headerMenu">
+                <a class="headerMenu__link" href="#">
+                    <img class="headerMenu__logo" src="static/img/content/header__logo.png" alt="">
+                </a>
+                <div class="headerMenu__btnWrap">
+                    <button class="headerMenu__btn headerMenu__btn-open"></button>
+                    <button class="headerMenu__btn headerMenu__btn-close"></button>
+                </div>
+                <p class="headerMenu__socials socials"><a class="socials__btn socials__btn-fb" href="#"><i class="fab fa-facebook-f"></i>facebook</a><a class="socials__btn socials__btn-inst" href="#"><i class="fab fa-instagram"></i>instagram</a>
+                    <a class="socials__btn socials__btn-twi" href="#"><i class="fab fa-twitter"></i>twitter</a><a class="socials__btn socials__btn-ln" href="#"><i class="fab fa-linkedin-in"></i>linkedin</a>
+                </p>
+                <nav class="headerMenu__wrap">
+                    <ul class="headerMenu__list headerNav">
+                        <li class="headerNav__item"><span class="headerNav__num">01</span><a class="headerNav__itemLink" href="index.html">Home</a>
+                        </li>
+                        <li class="headerNav__item"><span class="headerNav__num">02</span><a class="headerNav__itemLink" href="#">The building</a>
+                        </li>
+                        <li class="headerNav__item"><span class="headerNav__num">03</span><a class="headerNav__itemLink" href="#">Meet us</a>
+                        </li>
+                        <li class="headerNav__item"><span class="headerNav__num">04</span><a class="headerNav__itemLink" href="#">Blog</a>
+                        </li>
+                        <li class="headerNav__item"><span class="headerNav__num">05</span><a class="headerNav__itemLink" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="welcomeSlider">
+                <div class="welcomeSlider__head"><b class="welcomeSlider__lead">An artful business community</b>
+                    <p class="welcomeSlider__contacts"><span class="welcomeSlider__address">3636 South Iron Street | Chicago IL 60609</span><span class="welcomeSlider__tel">(312) 933-6556</span>
+                    </p><a class="welcomeSlider__btn btn">Join us</a>
+                </div>
+                <div class="welcomeSlider__sliderWrap">
+                    <div class="welcomeSlider__textSlider textSlider">
+                        <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
+                            <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour</a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour</a>
+                            </div>
+                        </div>
+                        <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
+                            <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour</a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour</a>
+                            </div>
+                        </div>
+                        <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
+                            <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour</a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="welcomeSlider__anchorLink" href="#main"></a>
+            </section>
+        </header>
 
 
         <script src="static/js/separate-js/jquery-3.2.1.min.js"></script>
