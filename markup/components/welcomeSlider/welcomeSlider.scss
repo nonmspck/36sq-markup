@@ -1,10 +1,50 @@
 .welcomeSlider {
+    padding: 32px 20px 47px 28px;
+
+    font: 600 16px/1.4 "Panton", sans-serif;
+    color: $white;
+    letter-spacing: 0.2px;
+}
+
+.welcomeSlider__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font: 600 14px/1.8 "Panton", sans-serif;
+}
+
+.welcomeSlider__lead {
+    font: 600 18px/1.4 "Panton", sans-serif;
+    opacity: .7;
+}
+
+.welcomeSlider__contacts {
+    margin: 0 0 46px;
+
+    order: -1;
+
+    opacity: .8;
+    letter-spacing: .18px;
+
+    .fas {
+        margin: 0 5px 0 0;
+    }
 
     @media (min-width: $grid-sl) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 150px;
+        order: 0;
+    }
+}
+
+.welcomeSlider__btn {
+    width: 116px;
+    text-align: center;
+
+    position: fixed;
+    top: 24px;
+    right: 24px;
+
+    @media (min-width: $grid-sl) {
+        position: static;
     }
 }

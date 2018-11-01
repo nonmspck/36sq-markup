@@ -1,20 +1,26 @@
 .headerMenu {
-    padding: 40px 0 60px;
+    height: 100px;
+    padding: 0 24px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 
     background-color: $white;
 
     font: 400 14px "Panton", sans-serif;
 
     @media (min-width: $grid-sl) {
+        justify-content: space-between;
         flex-direction: column;
 
         width: 150px;
+        height: auto;
+        padding: 40px 0 60px;
 
         top: 0;
         bottom: 0;
@@ -31,6 +37,18 @@
     &:hover,
     &:active {
         opacity: .7;
+    }
+}
+
+.headerMenu__btnWrap {
+    margin: 0 22px 0 0;
+
+    order: -1;
+
+    @media (min-width: $grid-sl) {
+        margin: 0;
+
+        order: 0;
     }
 }
 

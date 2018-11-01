@@ -28,7 +28,7 @@ html {
 }
 body {
     font-family: "Panton", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 
     font-weight: 400;
     display: flex;
@@ -47,4 +47,33 @@ img {
 input {
     -webkit-appearance: none;
     border-radius: 0;
+}
+
+.page {
+    padding: 100px 0 0;
+
+    @media (min-width: $grid-sl) {
+        padding: 0 0 0 150px;
+    }
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px;
+    border: none;
+
+    font: 700 14px/1.8 "Panton", sans-serif;
+    color: $white;
+    letter-spacing: 1px;
+    
+    background-color: $red;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .6;
+    }
 }
