@@ -1,0 +1,23 @@
+html {
+    font-size: #{$default-font-size}px;
+}
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.-content- {
+    flex-grow: 1;
+}
+img {
+    max-width: 100%;
+}
+*:focus {
+    outline: none;
+}
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}

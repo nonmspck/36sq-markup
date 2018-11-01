@@ -1,0 +1,37 @@
+@import "vars";
+
+@mixin wrapper($width: $grid-lm) {
+    display: flex;
+    width: $width;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    @media (max-width: $grid-lm) {
+        width: $grid-ls;
+    }
+    @media (max-width: $grid-ls) {
+        width: 100%;
+    }
+}
+
+@mixin max-screen($max) {
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin min-screen($min) {
+    @media screen and (min-width: $min + 1px) {
+        @content;
+    }
+}
+
+@function em($pixels, $context: $default-font-size) {
+    @return #{$pixels/$context}em;
+}
+@function rem($pixels, $context: $default-font-size) {
+    @return #{$pixels/$context}rem;
+}
+
