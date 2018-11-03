@@ -1,15 +1,27 @@
 .welcomeSlider {
     padding: 32px 20px 47px 28px;
 
+    position: relative;
+    z-index: 10;
+
     font: 600 16px/1.4 "Panton", sans-serif;
     color: $white;
     letter-spacing: 0.2px;
+
+    background: url("../img/content/welcomeSlider__bgr-mobile.jpg") no-repeat top center;
+    background-size: cover;
+
+    @media (min-width: $grid-sl) {
+        background: url("../img/content/welcomeSlider__bgr-desktop.jpg") no-repeat top center;
+        background-size: cover;
+    }
 }
 
 .welcomeSlider__head {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 
     font: 600 14px/1.8 "Panton", sans-serif;
 }
@@ -37,14 +49,10 @@
 }
 
 .welcomeSlider__btn {
-    width: 116px;
-    text-align: center;
-
-    position: fixed;
-    top: 24px;
-    right: 24px;
+    display: none;
 
     @media (min-width: $grid-sl) {
-        position: static;
+        display: inline-block;
+        padding: 13px 30px;
     }
 }

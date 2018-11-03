@@ -1,6 +1,9 @@
 .header {
     background-color: $lightgrey;
 
+    position: relative;
+    z-index: 11;
+
     @media (min-width: $grid-sl) {
         height: 100vh;
     }
