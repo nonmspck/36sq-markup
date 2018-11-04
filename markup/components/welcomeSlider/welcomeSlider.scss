@@ -1,6 +1,4 @@
 .welcomeSlider {
-    padding: 32px 20px 47px 28px;
-
     position: relative;
     z-index: 10;
 
@@ -8,15 +6,8 @@
     color: $white;
     letter-spacing: 0.2px;
 
-    background: url("../img/content/welcomeSlider__bgr-mobile.jpg") no-repeat top center;
-    background-size: cover;
-
     @media (min-width: $grid-sl) {
         height: 100vh;
-        padding: 50px 100px;
-
-        background: url("../img/content/welcomeSlider__bgr-desktop.jpg") no-repeat top center;
-        background-size: cover;
     }
 }
 
@@ -26,14 +17,23 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    z-index: 11;
+
     font: 600 14px/1.8 "Panton", sans-serif;
 
     @media (min-width: $grid-sl) {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        
-        position: relative;
+
+        padding-right: 140px;
+
+        top: 50px;
+        right: 100px;
+        left: 100px;
     }
 }
 
@@ -56,7 +56,7 @@
 }
 
 .welcomeSlider__contacts {
-    margin: 0 0 46px;
+    margin: 0 0 25px;
 
     order: -1;
 
@@ -82,20 +82,11 @@
     margin-bottom: 5px;
 
     span {
-        margin: 0 8px;
-
-        font-size: 0;
 
         @media (min-width: $grid-sl) {
             margin: 0 5px;
 
             font-size: inherit;
-        }
-    }
-
-    br {
-        @media (min-width: $grid-sl) {
-            display: none;
         }
     }
 
@@ -111,25 +102,27 @@
 
     @media (min-width: $grid-sl) {
         display: inline-block;
-        padding: 13px 30px;
+        padding: 13px 25px;
+
+        position: absolute;
+        top: -5px;
+        right: 0;
     }
 }
 
 .welcomeSlider__sliderWrap {
-    @media (min-width: $grid-sl) {
-        min-height: 80%;
+    position: relative;
+    z-index: 10;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    @media (min-width: $grid-sl) {
+        min-height: 100%;
     }
 }
 
 .textSlider {
-    padding: 30px 30px 0 0;
     
     @media (min-width: $grid-sl) {
-        padding: 0;
+        min-height: 100vh;
     }
 }
 
@@ -137,8 +130,25 @@
     display: flex;
     flex-direction: column;
 
+    padding: 200px 70px 70px 25px;
+
+    background: url("../img/content/welcomeSlider__bgr-mobile.jpg") no-repeat top center;
+    background-size: cover;
+
+    &.slick-slide {
+        @media (min-width: $grid-sl) {
+            display: flex;
+        }
+    }
+
     @media (min-width: $grid-sl) {
+        min-height: 100vh;
+        padding: 0 100px;
+
         justify-content: center;
+
+        background: url("../img/content/welcomeSlider__bgr-desktop.jpg") no-repeat top center;
+        background-size: cover;
     }
 }
 
@@ -159,6 +169,7 @@
     letter-spacing: 0.2px;
 
     @media (min-width: $grid-sl) {
+        max-width: 500px;
         margin: 15px 0 24px;
 
         font: 600 18px/1.4 "Panton", sans-serif;

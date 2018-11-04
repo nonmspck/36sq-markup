@@ -12,6 +12,7 @@
     z-index: 11;
 
     background-color: $white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
 
     font: 400 14px "Panton", sans-serif;
 
@@ -26,6 +27,8 @@
         top: 0;
         bottom: 0;
         left: 0;
+
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.08);
     }
 }
 

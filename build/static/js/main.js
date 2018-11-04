@@ -87,6 +87,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
+        draggable: false,
         infinite: false
     });
 });
