@@ -39,6 +39,7 @@
 
 .welcomeSlider__lead {
     margin-left: 7px;
+    padding-right: 20px;
 
     font: 600 18px/1.4 "Panton", sans-serif;
 
@@ -56,7 +57,7 @@
 }
 
 .welcomeSlider__contacts {
-    margin: 0 0 25px;
+    margin: 0 0 40px;
 
     order: -1;
 
@@ -113,17 +114,6 @@
 .welcomeSlider__sliderWrap {
     position: relative;
     z-index: 10;
-
-    @media (min-width: $grid-sl) {
-        min-height: 100%;
-    }
-}
-
-.textSlider {
-    
-    @media (min-width: $grid-sl) {
-        min-height: 100vh;
-    }
 }
 
 .textSlider__slide {
@@ -142,6 +132,7 @@
     }
 
     @media (min-width: $grid-sl) {
+        height: 100vh;
         min-height: 100vh;
         padding: 0 100px;
 
@@ -230,5 +221,195 @@
             margin-right: 16px;
             margin-bottom: 0;
         }
+    }
+}
+
+.welcomeSlider__arrowsWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    right: 30px;
+    top: 48%;
+
+    @media (min-width: $grid-sl) {
+        right: 80px;
+    }
+}
+
+.welcomeSlider__arrow {
+    width: 16px;
+    height: 24px;
+    border: none;
+
+    position: relative;
+
+    background-color: transparent;
+    transition: .3s;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &:hover,
+    &:active {
+        opacity: .3;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        
+        width: 2px;
+        height: 70%;
+    
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        transform: rotate(-45deg);
+
+        background-color: $white;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        
+        width: 2px;
+        height: 70%;
+    
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: rotate(45deg);
+
+        background-color: $white;
+    }
+
+    &-up {
+        transform: rotate(-90deg);
+    }
+
+    &-down {
+        transform: rotate(90deg);
+    }
+
+    &.slick-disabled {
+        opacity: .3;
+        cursor: default;
+    }
+}
+
+.welcomeSlider__counter {
+    width: 60px;
+    padding-bottom: 20px;
+
+    position: absolute;
+
+    color: $white;
+
+    &::after {
+        content: "";
+
+        height: 3px;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 2px; 
+
+        background-color: $white;
+    }
+
+    &-top {
+        top: 90px;
+        right: 0;
+
+        font: 700 40px/1.2 "Panton", sans-serif;
+        letter-spacing: 0.5px;
+        
+        @media (min-width: $grid-sl) {
+            top: 180px;
+        }
+    }
+
+    &-bottom {
+        right: 0;
+        bottom: 70px;
+
+        font: 600 24px/1.2 "Panton", sans-serif;
+        letter-spacing: 0.3px;
+
+        opacity: .3;
+
+        @media (min-width: $grid-sl) {
+            bottom: 115px;
+        }
+    }
+
+    &-hide {
+        display: none;
+    }
+
+    @media (min-width: $grid-sl) {
+        width: 100px;
+    }
+}
+
+.welcomeSlider__anchorLink {
+    width: 16px;
+    height: 24px;
+
+    display: none;
+
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    z-index: 11;
+    transform: rotate(90deg);
+
+    font-size: 0;
+    text-decoration: none;
+
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .3;
+    }
+    
+    &::before {
+        content: "";
+        display: block;
+        
+        width: 2px;
+        height: 70%;
+    
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        transform: rotate(-45deg);
+
+        background-color: $white;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        
+        width: 2px;
+        height: 70%;
+    
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: rotate(45deg);
+
+        background-color: $white;
+    }
+
+    @media (min-width: $grid-sl) {
+        display: block;
     }
 }

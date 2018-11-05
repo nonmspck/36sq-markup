@@ -9275,6 +9275,7 @@ input {
 
 .welcomeSlider__lead {
   margin-left: 7px;
+  padding-right: 20px;
   font: 600 18px/1.4 "Panton", sans-serif;
   opacity: .7;
 }
@@ -9290,7 +9291,7 @@ input {
 }
 
 .welcomeSlider__contacts {
-  margin: 0 0 25px;
+  margin: 0 0 40px;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -9354,18 +9355,6 @@ input {
   z-index: 10;
 }
 
-@media (min-width: 768px) {
-  .welcomeSlider__sliderWrap {
-    min-height: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .textSlider {
-    min-height: 100vh;
-  }
-}
-
 .textSlider__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9389,6 +9378,7 @@ input {
 
 @media (min-width: 768px) {
   .textSlider__slide {
+    height: 100vh;
     min-height: 100vh;
     padding: 0 100px;
     -webkit-box-pack: center;
@@ -9489,5 +9479,192 @@ input {
   .textSlider__btn:not(:last-child) {
     margin-right: 16px;
     margin-bottom: 0;
+  }
+}
+
+.welcomeSlider__arrowsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  right: 30px;
+  top: 48%;
+}
+
+@media (min-width: 768px) {
+  .welcomeSlider__arrowsWrap {
+    right: 80px;
+  }
+}
+
+.welcomeSlider__arrow {
+  width: 16px;
+  height: 24px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.welcomeSlider__arrow:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.welcomeSlider__arrow:hover, .welcomeSlider__arrow:active {
+  opacity: .3;
+}
+
+.welcomeSlider__arrow::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.welcomeSlider__arrow::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #ffffff;
+}
+
+.welcomeSlider__arrow-up {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.welcomeSlider__arrow-down {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.welcomeSlider__arrow.slick-disabled {
+  opacity: .3;
+  cursor: default;
+}
+
+.welcomeSlider__counter {
+  width: 60px;
+  padding-bottom: 20px;
+  position: absolute;
+  color: #ffffff;
+}
+
+.welcomeSlider__counter::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 2px;
+  background-color: #ffffff;
+}
+
+.welcomeSlider__counter-top {
+  top: 90px;
+  right: 0;
+  font: 700 40px/1.2 "Panton", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .welcomeSlider__counter-top {
+    top: 180px;
+  }
+}
+
+.welcomeSlider__counter-bottom {
+  right: 0;
+  bottom: 70px;
+  font: 600 24px/1.2 "Panton", sans-serif;
+  letter-spacing: 0.3px;
+  opacity: .3;
+}
+
+@media (min-width: 768px) {
+  .welcomeSlider__counter-bottom {
+    bottom: 115px;
+  }
+}
+
+.welcomeSlider__counter-hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .welcomeSlider__counter {
+    width: 100px;
+  }
+}
+
+.welcomeSlider__anchorLink {
+  width: 16px;
+  height: 24px;
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+  z-index: 11;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 0;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.welcomeSlider__anchorLink:hover, .welcomeSlider__anchorLink:active {
+  opacity: .3;
+}
+
+.welcomeSlider__anchorLink::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.welcomeSlider__anchorLink::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .welcomeSlider__anchorLink {
+    display: block;
   }
 }
