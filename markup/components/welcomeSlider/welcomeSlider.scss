@@ -42,6 +42,7 @@
     padding-right: 20px;
 
     font: 600 18px/1.4 "Panton", sans-serif;
+    text-transform: capitalize;
 
     opacity: .7;
 
@@ -127,12 +128,13 @@
 
     &.slick-slide {
         @media (min-width: $grid-sl) {
+            height: 100vh;
+            
             display: flex;
         }
     }
 
     @media (min-width: $grid-sl) {
-        height: 100vh;
         min-height: 100vh;
         padding: 0 100px;
 

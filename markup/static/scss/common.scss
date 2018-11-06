@@ -77,3 +77,62 @@ input {
         opacity: .6;
     }
 }
+
+.link {
+    display: flex;
+    align-items: center;
+
+    font: 700 14px/1.6 "Panton", sans-serif;
+    color: $red;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .3;
+    }
+
+    i {
+        margin-left: 8px;
+
+        font-size: 0.7em;
+    }
+}
+
+.sectionHeading {
+    margin: 0;
+    padding-left: 30px;
+
+    position: relative;
+
+    font: 700 24px/1.6 "Panton", sans-serif;
+    text-transform: uppercase;
+    color: $lightgrey;
+    letter-spacing: 1px;
+
+    &::before {
+        content: "";
+        display: block;
+
+        width: 17px;
+        height: 3px;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        background-color: $lightgrey;
+
+        @media (min-width: $grid-sl) {
+            width: 80px;
+        }
+    }
+
+    @media (min-width: $grid-sl) {
+        padding-left: 100px;
+    }
+}
