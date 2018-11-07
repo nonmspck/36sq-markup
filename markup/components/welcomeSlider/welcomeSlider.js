@@ -36,12 +36,11 @@ $(document).ready(function(){
         $welcomeSlider.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
+            infinite: false,
             vertical: true,
             verticalSwiping: true,
-            // fade: true,
-            // cssEase: 'linear',
             draggable: false,
-            infinite: false,
+            touchMove: false,
             prevArrow: ".welcomeSlider__arrow-up",
             nextArrow: ".welcomeSlider__arrow-down"
         });
@@ -49,6 +48,17 @@ $(document).ready(function(){
         $(sliderCounter_top).addClass("welcomeSlider__counter-hide");
         $(sliderCounter_bottom).addClass("welcomeSlider__counter-hide");
     }
+
+    var $anchorLink = $(".welcomeSlider__anchorLink");
+
+    $anchorLink.on("click", function(event){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 400);
+        event.preventDefault();
+        return false;
+    });
 });
 
 

@@ -9501,6 +9501,208 @@ input {
   cursor: default;
 }
 
+.spacesSection {
+  font: 600 20px/1.2 "Panton", sans-serif;
+  background-color: #f5f7fa;
+}
+
+.spacesSection__inner {
+  padding: 40px 0 55px 30px;
+}
+
+@media (min-width: 768px) {
+  .spacesSection__inner {
+    padding: 80px 0 80px 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .spacesSection__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 100px;
+  }
+}
+
+.spacesSection__head {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 960px) {
+  .spacesSection__head {
+    margin-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.spacesSection__heading {
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+@media (min-width: 960px) {
+  .spacesSection__heading::before {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .spacesSection__heading {
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .spacesSection__heading {
+    margin-right: -100px;
+    margin-left: auto;
+    padding-right: 100px;
+    padding-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.spacesSection__lead {
+  font: 700 32px/1.3 "Panton", sans-serif;
+  color: #333333;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .spacesSection__lead {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.spacesSection__gal {
+  margin: 0 0 60px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+@media (min-width: 960px) {
+  .spacesSection__gal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 0 75px;
+  }
+}
+
+.spacesSection__item {
+  width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.spacesSection__item:not(:last-child) {
+  margin-bottom: 58px;
+}
+
+@media (min-width: 960px) {
+  .spacesSection__item:not(:last-child) {
+    margin-right: 1.5%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .spacesSection__item {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .spacesSection__item {
+    min-height: 400px;
+  }
+}
+
+.spacesSection__item:nth-child(1) {
+  background: url("../img/content/spacesSection__img-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.spacesSection__item:nth-child(2) {
+  background: url("../img/content/spacesSection__img-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.spacesSection__item:nth-child(3) {
+  background: url("../img/content/spacesSection__img-3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.spacesSection__itemHeading {
+  margin: 0 0 0 20px;
+  position: relative;
+  font: 600 20px/1.2 "Panton", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.25px;
+}
+
+.spacesSection__itemLink {
+  display: block;
+  width: 85%;
+  padding: 15px 25px;
+  position: relative;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font: 700 14px/1.5 "Panton", sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #e5002e;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.spacesSection__itemLink:hover, .spacesSection__itemLink:active {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spacesSection__itemLink:hover span, .spacesSection__itemLink:active span {
+  margin-left: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .welcomeSlider {
   position: relative;
   z-index: 10;
