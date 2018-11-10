@@ -102,6 +102,16 @@ input {
     }
 }
 
+.input {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid rgba($white, .7);
+
+    background-color: transparent;
+
+
+}
+
 .sectionHeading {
     margin: 0;
     padding-left: 30px;
