@@ -100,6 +100,7 @@ $weSlider.slick({
     nextArrow: ".navSlider__btn-next"
 });
 "use strict";
+"use strict";
 
 $(document).ready(function () {
     $(".headerMenu__btn-open").click(function (event) {
@@ -117,7 +118,6 @@ $(document).ready(function () {
         $(".socials").addClass("socials-jsHide");
     });
 });
-"use strict";
 "use strict";
 "use strict";
 

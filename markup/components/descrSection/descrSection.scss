@@ -162,12 +162,18 @@
 
 .descrSection__weSlider {
     margin-top: 30px;
+
+    @media (min-width: $grid-lm) {
+        margin-top: 60px;
+    }
 }
 
 .weSlider__item {
     &.slick-slide {
-        @media (min-width: $grid-ls) {
-            // 
+        @media (min-width: $grid-lm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
         }
     }
 }
@@ -175,6 +181,12 @@
 .weSlider__img {
     width: 100%;
     height: auto;
+
+    @media (min-width: $grid-lm) {
+        width: 47%;
+
+        flex: 0 0 auto;
+    }
 }
 
 .weSlider__textWrap {
@@ -183,6 +195,14 @@
 
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $grid-lm) {
+        width: 45%;
+        margin: 0 0 180px;
+        padding: 10px 40px 0 0;
+
+        flex: 0 0 auto;
+    }
 }
 
 .weSlider__lead {
