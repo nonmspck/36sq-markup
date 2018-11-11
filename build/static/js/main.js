@@ -135,6 +135,7 @@ $introSlider.slick({
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 
 $(document).ready(function () {
     var $welcomeSlider = $(".textSlider");
