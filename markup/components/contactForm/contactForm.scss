@@ -1,0 +1,175 @@
+// main
+
+.contactForm {
+    font: 600 16px/1.5 "Panton", sans-serif;
+    color: rgba($darkgrey, .3);
+    letter-spacing: 0.2px;
+
+    background-color: $white;
+}
+
+.contactForm__inner {
+    padding: 50px 30px 80px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+
+        width: 710px;
+        height: 450px;
+        border: 80px solid rgba($solidwhite, .3);
+
+        position: absolute;
+        top: 200px;
+        left: 50%;
+
+        @media (min-width: $grid-lm) {
+            width: 55%;
+            height: 660px;
+
+            top: 180px;
+            left: 18%;
+        }
+    }
+
+    @media (min-width: $grid-sl) {
+        padding: 80px 100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 100px;
+    }
+}
+
+// heading
+
+.contactForm__head {
+    margin-bottom: 50px;
+
+    position: relative;
+
+    @media (min-width: $grid-ls) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        margin-bottom: 60px;
+    }
+}
+
+.contactForm__heading {
+    margin-left: -30px;
+    margin-bottom: 40px;
+
+    &::before {
+        @media (min-width: $grid-ls) {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    @media (min-width: $grid-sl) {
+        margin-left: -100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        margin: 30px -100px 0 0;
+        padding: 0 100px 0 0;
+
+        order: 1;
+    }
+}
+
+.contactForm__lead {
+    font: 700 32px/1.3 "Panton", sans-serif;
+    color: $darkgrey;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+
+    @media (min-width: $grid-ls) {
+        margin-right: auto;
+
+        order: -1;
+    }
+}
+
+// form
+
+.contactForm__form {
+    position: relative;
+
+    @media (min-width: $grid-ls) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contactForm__container {
+    @media (min-width: $grid-ls) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contactForm__col {
+    @media (min-width: $grid-ls) {
+        width: 48%;
+    }
+}
+
+.contactForm__input {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba($darkgrey, .2);
+
+    color: $darkgrey;
+
+    transition: .3s;
+
+    &-area {
+        height: 125px;
+        margin-bottom: 0;
+
+        resize: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-bottom: 1px solid $darkgrey;
+    }
+
+    &:last-child {
+        @media (min-width: $grid-ls) {
+            margin-bottom: 0;
+        }
+    }
+
+    &::placeholder {
+        color: rgba($darkgrey, .4);
+    }
+
+    @media (min-width: $grid-ls) {
+        width: 85%;
+    }
+}
+
+.contactForm__btn {
+    margin-top: 40px;
+    padding: 0;
+    border: none;
+
+    background-color: transparent;
+
+    @media (min-width: $grid-ls) {
+        margin-right: 7%;
+        margin-left: auto;
+    }
+}

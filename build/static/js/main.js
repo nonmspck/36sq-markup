@@ -61,6 +61,7 @@ $(document).ready(function () {
 //# sourceMappingURL=swiper.min.js.map
 
 "use strict";
+"use strict";
 
 var $descrNavSlider = $(".navSlider__slider");
 

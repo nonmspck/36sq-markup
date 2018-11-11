@@ -1,0 +1,22 @@
+section.contactForm
+    .contactForm__inner
+        .contactForm__head
+            h2.contactForm__heading.sectionHeading
+                | get in touch
+            b.contactForm__lead
+                | Contact Us
+        form.contactForm__form(action="", method="post")
+            .contactForm__container
+                .contactForm__col
+                    input.contactForm__input.input(type="text", name="fname", placeholder="First Name *")
+                    input.contactForm__input.input(type="text", name="lname", placeholder="Last Name")
+                    input.contactForm__input.input(type="email", name="email", placeholder="Email *")
+                    input.contactForm__input.input(type="tel", name="phone", placeholder="Phone *")
+                .contactForm__col
+                    input.contactForm__input.input(type="text", name="cname", placeholder="Company Name")
+                    input.contactForm__input.input(type="text", name="btype", placeholder="Type of Business")
+                    textarea.contactForm__input.contactForm__input-area.input(name="area", placeholder="Your message *")
+            button.contactForm__btn.link(type="submit")
+                | send message
+                span 
+                    | →
