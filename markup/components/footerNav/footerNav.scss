@@ -1,0 +1,138 @@
+.footerNav {
+    font: 600 16px/1.5 "Panton", sans-serif;
+    color: $white;
+
+    background-color: $darkgrey-2;
+
+    @media (min-width: $grid-lm) {
+        display: flex;
+    }
+}
+
+.footerNav__inner {
+    padding: 40px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $grid-sl) {
+        padding: 80px 100px 40px;
+    }
+
+    @media (min-width: $grid-lm) {
+        width: 100%;
+        max-width: 950px;
+        margin-left: auto;
+        padding: 120px 0 100px 100px;
+
+        justify-content: space-between;
+    }
+}
+
+.footerNav__logoLink {
+    width: 73px;
+    height: 46px;
+    margin-right: 12%;
+
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .7;
+    }
+
+    @media (min-width: $grid-ls) {
+        width: 95px;
+        height: 61px;
+        margin-right: 0;
+    }
+
+    @media (min-width: $grid-lm) {
+        margin-bottom: 20px;
+    }
+}
+
+.footerNav__socials {
+    
+}
+
+.footerSoc {
+    display: flex;
+
+    @media (min-width: $grid-ls) {
+        display: none;
+    }
+}
+
+.footerSoc__link {
+    font-size: 0;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    i {
+        font-size: 24px;
+        color: rgba($white, .15);
+
+        transition: .3s;
+    }
+
+    &:hover,
+    &:active {
+        i {
+            color: rgba($white, .8);
+        }
+    }
+}
+
+.footerNav__navList {
+    width: 100%;
+    height: 280px;
+    margin: 10px 0 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style: none;
+
+    @media (min-width: $grid-ls) {
+        height: 180px;
+    }
+
+    @media (min-width: $grid-lm) {
+        width: 80%;
+        height: 160px;
+        margin-top: 0;
+    }
+}
+
+.footerNav__navItem {
+    margin: 30px 20px 0 0;
+
+    @media (min-width: $grid-lm) {
+        margin-top: 35px;
+
+        &:nth-child(3n + 1) {
+            margin-top: 0;
+        }
+    }
+}
+
+.footerNav__navLink {
+    font: 600 16px/1.5 "Panton", sans-serif;
+    color: $white;
+    letter-spacing: 0.2px;
+
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .3;
+    }
+}

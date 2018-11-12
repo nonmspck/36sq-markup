@@ -1,0 +1,59 @@
+.footerContacts {
+    font: 600 14px/1.8 "Panton", sans-serif;
+    color: rgba($white, .6);
+    letter-spacing: 0.2px;
+
+    background-color: rgba($white, .05);
+
+    @media (min-width: $grid-lm) {
+        display: flex;
+    }
+}
+
+.footerContacts__inner {
+    padding: 30px;
+
+    @media (min-width: $grid-sl) {
+        padding: 40px 100px 80px;
+    }
+
+    @media (min-width: $grid-lm) {
+        width: 100%;
+        max-width: 475px;
+        margin-right: auto;
+        padding: 120px 0 100px 60px;
+    }
+}
+
+.footerContacts__contacts {
+    margin: 0 0 30px;
+}
+
+.footerContacts__copyrights {
+    margin: 0;
+
+    color: rgba($white, .2);
+
+    span {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.footerContacts__copyLink {
+    margin-left: 4px;
+
+    font: inherit;
+    color: $white;
+    text-decoration: none;
+
+    transition: .3s;
+
+    &:hover,
+    &:active {
+        opacity: .2;
+    }
+}

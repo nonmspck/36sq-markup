@@ -1,0 +1,20 @@
+.footer {
+    background-color: $darkgrey-2;
+
+    @media (min-width: $grid-lm) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__nav {
+    @media (min-width: $grid-lm) {
+        width: 66%;
+    }
+}
+
+.footer__contacts {
+    @media (min-width: $grid-lm) {
+        width: 34%;
+    }
+}

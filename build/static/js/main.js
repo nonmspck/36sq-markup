@@ -102,6 +102,9 @@ $weSlider.slick({
 });
 "use strict";
 "use strict";
+"use strict";
+"use strict";
+"use strict";
 
 $(document).ready(function () {
     $(".headerMenu__btn-open").click(function (event) {
