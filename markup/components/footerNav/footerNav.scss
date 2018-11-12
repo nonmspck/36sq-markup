@@ -21,7 +21,7 @@
 
     @media (min-width: $grid-lm) {
         width: 100%;
-        max-width: 950px;
+        max-width: 960px;
         margin-left: auto;
         padding: 120px 0 100px 100px;
 
@@ -50,10 +50,6 @@
     @media (min-width: $grid-lm) {
         margin-bottom: 20px;
     }
-}
-
-.footerNav__socials {
-    
 }
 
 .footerSoc {
@@ -95,7 +91,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     list-style: none;
 
@@ -107,6 +102,8 @@
         width: 80%;
         height: 160px;
         margin-top: 0;
+
+        justify-content: space-between;
     }
 }
 
