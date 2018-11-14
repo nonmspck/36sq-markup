@@ -40,7 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     @media (min-width: $grid-lm) {
@@ -87,6 +87,10 @@
 
 .featuresPopupSection__btn {
     padding: 13px 30px;
+
+    @media (min-width: $grid-ls) {
+        align-self: flex-start;
+    }
 }
 
 .featuresPopupSection__listWrap {

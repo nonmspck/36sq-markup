@@ -9437,9 +9437,9 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -9484,6 +9484,13 @@ input {
 
 .featuresPopupSection__btn {
   padding: 13px 30px;
+}
+
+@media (min-width: 960px) {
+  .featuresPopupSection__btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .featuresPopupSection__listWrap {
