@@ -101,6 +101,16 @@ $weSlider.slick({
     nextArrow: ".navSlider__btn-next"
 });
 "use strict";
+
+$(document).ready(function () {
+    $(".matchSection__btn").click(function (event) {
+        event.preventDefault();
+        $(".headerMenu__btn-open").addClass("headerMenu__btn-jsHide");
+        $(".headerMenu__btn-close").removeClass("headerMenu__btn-jsHide");
+        $(".featuresPopupSection").removeClass("featuresPopupSection-jsHide");
+    });
+});
+"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -114,12 +124,44 @@ $(document).ready(function () {
         $(".headerMenu__wrap").removeClass("headerMenu__wrap-jsHide");
         $(".socials").removeClass("socials-jsHide");
     });
+
     $(".headerMenu__btn-close").click(function (event) {
+
+        // close button
+
         event.preventDefault();
-        $(".headerMenu__btn-close").addClass("headerMenu__btn-jsHide");
-        $(".headerMenu__btn-open").removeClass("headerMenu__btn-jsHide");
-        $(".headerMenu__wrap").addClass("headerMenu__wrap-jsHide");
-        $(".socials").addClass("socials-jsHide");
+
+        var closeBtn_hide = function closeBtn_hide() {
+            $(".headerMenu__btn-close").addClass("headerMenu__btn-jsHide");
+            $(".headerMenu__btn-open").removeClass("headerMenu__btn-jsHide");
+        };
+
+        if (!$(".headerMenu__wrap").hasClass("headerMenu__wrap-jsHide")) {
+
+            // navigation popup
+
+            closeBtn_hide();
+            $(".headerMenu__wrap").addClass("headerMenu__wrap-jsHide");
+            $(".socials").addClass("socials-jsHide");
+        } else if (!$(".tourPopupSection").hasClass("tourPopupSection-jsHide")) {
+
+            // tour form popup
+
+            closeBtn_hide();
+            $(".tourPopupSection").addClass("tourPopupSection-jsHide");
+        } else if (!$(".videoPopupSection").hasClass("videoPopupSection-jsHide")) {
+
+            // video popup
+
+            closeBtn_hide();
+            $(".videoPopupSection").addClass("videoPopupSection-jsHide");
+        } else if (!$(".featuresPopupSection").hasClass("featuresPopupSection-jsHide")) {
+
+            // features popup
+
+            closeBtn_hide();
+            $(".featuresPopupSection").addClass("featuresPopupSection-jsHide");
+        }
     });
 });
 "use strict";
@@ -139,6 +181,34 @@ $introSlider.slick({
 "use strict";
 "use strict";
 "use strict";
+"use strict";
+"use strict";
+
+$(document).ready(function () {
+    $(".textSlider__btn-takeTour").click(function (event) {
+        event.preventDefault();
+        $(".headerMenu__btn-open").addClass("headerMenu__btn-jsHide");
+        $(".headerMenu__btn-close").removeClass("headerMenu__btn-jsHide");
+        $(".tourPopupSection").removeClass("tourPopupSection-jsHide");
+    });
+});
+"use strict";
+
+$(document).ready(function () {
+    $(".textSlider__btn-videoTour").click(function (event) {
+        event.preventDefault();
+        $(".headerMenu__btn-open").addClass("headerMenu__btn-jsHide");
+        $(".headerMenu__btn-close").removeClass("headerMenu__btn-jsHide");
+        $(".videoPopupSection").removeClass("videoPopupSection-jsHide");
+    });
+
+    $(".videoPopupSection__overlay").click(function (event) {
+        event.preventDefault();
+        $(".headerMenu__btn-close").addClass("headerMenu__btn-jsHide");
+        $(".headerMenu__btn-open").removeClass("headerMenu__btn-jsHide");
+        $(".videoPopupSection").addClass("videoPopupSection-jsHide");
+    });
+});
 "use strict";
 
 $(document).ready(function () {

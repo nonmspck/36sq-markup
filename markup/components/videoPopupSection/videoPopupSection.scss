@@ -1,0 +1,50 @@
+.videoPopupSection {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-jsHide {
+        display: none;
+    }
+
+    @media (min-width: $grid-sl) {
+        top: 0;
+        left: 150px;
+    }
+}
+
+.videoPopupSection__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: $darkgrey;
+    opacity: .9;
+}
+
+.videoPopupSection__inner {
+    width: 90%;
+    height: 90%;
+    max-width: 1280px;
+    max-height: 720px;
+    
+    position: relative;
+}
+
+.videoPopupSection__video {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}

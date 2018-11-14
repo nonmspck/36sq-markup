@@ -1,0 +1,24 @@
+section.tourPopupSection.tourPopupSection-jsHide
+    form.tourPopupSection__form(action="",method="post")
+        .tourPopupSection__textWrap
+            h2.tourPopupSection__heading
+                | Take a Tour
+            b.tourPopupSection__lead
+                | Step right up and get your tour
+        p.tourPopupSection__inputWrap
+            input.tourPopupSection__input.input(type="text", name="fname", placeholder="First Name *")
+            input.tourPopupSection__input.input(type="text", name="lname", placeholder="Last Name *")
+            input.tourPopupSection__input.input(type="tel", name="phone", placeholder="Phone *")
+            input.tourPopupSection__input.input(type="email", name="email", placeholder="Email *")
+        p.tourPopupSection__radioWrap
+            span.tourPopupSection__radioLead
+                | Preferred method of contact:
+            input.tourPopupSection__radio#tourPhone(type="radio", name="cmethod" value="phone", checked)
+            label.tourPopupSection__label(for="tourPhone")
+                | Phone
+            input.tourPopupSection__radio#tourEmail(type="radio", name="cmethod" value="email")
+            label.tourPopupSection__label(for="tourEmail")
+                | Email
+        button.tourPopupSection__btn.btn(type="submit")
+            | Schedule a tour
+            span →

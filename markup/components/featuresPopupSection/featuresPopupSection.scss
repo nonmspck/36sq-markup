@@ -1,0 +1,140 @@
+.featuresPopupSection {
+    border-top: 1px solid $lightgrey;
+
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: $lightgrey-3;
+
+    overflow-y: auto;
+
+    @media (min-width: $grid-sl) {
+        border-top: none;
+        border-left: 1px solid $lightgrey;
+
+        top: 0;
+        left: 150px;
+    }
+
+    @media (min-width: $grid-ls) {
+        display: flex;
+    }
+
+    &-jsHide {
+        display: none;
+    }
+}
+
+.featuresPopupSection__textWrap {
+    padding: 24px;
+
+    background-color: $white;
+
+    @media (min-width: $grid-ls) {
+        width: 52%;
+        padding: 0 24px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @media (min-width: $grid-lm) {
+        max-width: 700px;
+        padding: 0 50px 0 160px;
+    }
+}
+
+.featuresPopupSection__heading {
+    font: 700 32px/1.3 "Panton", sans-serif;
+    color: $darkgrey;
+    letter-spacing: 0.6px;
+}
+
+.featuresPopupSection__text {
+    margin: 15px 0;
+    max-height: 200px;
+
+    font: 400 16px/1.8 "Panton", sans-serif;
+    color: rgba($darkgrey, .7);
+    letter-spacing: 0.2px;
+
+    overflow-y: auto;
+
+    span {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 2em;
+        }
+    }
+}
+
+.featuresPopupSection__lead {
+    margin-bottom: 20px;
+
+    display: block;
+
+    font: 700 24px/1.6 "Panton", sans-serif;
+    color: rgba($darkgrey, .15);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.featuresPopupSection__btn {
+    padding: 13px 30px;
+}
+
+.featuresPopupSection__listWrap {
+    padding: 24px;
+
+    background-color: $lightgrey-3;   
+
+    @media (min-width: $grid-ls) {
+        width: 48%;
+        padding: 0 24px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: $grid-lm) {
+        padding: 0 30px 0 70px;
+    }
+}
+
+.featuresPopupSection__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.featuresPopupSection__item {
+    display: flex;
+    align-items: baseline;
+
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+.featuresPopupSection__itemNum {
+    margin-right: 25px;
+
+    font: 700 18px/2.1 "Panton", sans-serif;
+    color: $red;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+.featuresPopupSection__itemText {
+    font: 700 16px/2.1 "Panton", sans-serif;
+    color: $darkgrey;
+    letter-spacing: 0.7px;
+}

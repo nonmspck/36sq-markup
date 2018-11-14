@@ -69,17 +69,17 @@
                     <div class="welcomeSlider__textSlider textSlider">
                         <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
                             <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
-                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn textSlider__btn-takeTour btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-videoTour textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
                             </div>
                         </div>
                         <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
                             <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
-                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn textSlider__btn-takeTour btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-videoTour textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
                             </div>
                         </div>
                         <div class="textSlider__slide"><b class="textSlider__lead">Welcome to our Building!</b>
                             <p class="textSlider__text">We foster a small Business-to-Business community that complements to each other</p>
-                            <div class="textSlider__btnWrap"><a class="textSlider__btn btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
+                            <div class="textSlider__btnWrap"><a class="textSlider__btn textSlider__btn-takeTour btn">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn textSlider__btn-videoTour textSlider__btn-transparent btn">Virtual tour <i class="fas fa-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -284,6 +284,68 @@
                 </div>
             </div>
         </footer>
+        <div class="popups">
+            <section class="tourPopupSection tourPopupSection-jsHide">
+                <form class="tourPopupSection__form" action="" method="post">
+                    <div class="tourPopupSection__textWrap">
+                        <h2 class="tourPopupSection__heading">Take a Tour</h2><b class="tourPopupSection__lead">Step right up and get your tour</b>
+                    </div>
+                    <p class="tourPopupSection__inputWrap">
+                        <input class="tourPopupSection__input input" type="text" name="fname" placeholder="First Name *">
+                        <input class="tourPopupSection__input input" type="text" name="lname" placeholder="Last Name *">
+                        <input class="tourPopupSection__input input" type="tel" name="phone" placeholder="Phone *">
+                        <input class="tourPopupSection__input input" type="email" name="email" placeholder="Email *">
+                    </p>
+                    <p class="tourPopupSection__radioWrap"><span class="tourPopupSection__radioLead">Preferred method of contact:</span>
+                        <input class="tourPopupSection__radio" id="tourPhone" type="radio" name="cmethod" value="phone" checked>
+                        <label class="tourPopupSection__label" for="tourPhone">Phone</label>
+                        <input class="tourPopupSection__radio" id="tourEmail" type="radio" name="cmethod" value="email">
+                        <label class="tourPopupSection__label" for="tourEmail">Email</label>
+                    </p>
+                    <button class="tourPopupSection__btn btn" type="submit">Schedule a tour<span>→</span>
+                    </button>
+                </form>
+            </section>
+            <section class="videoPopupSection videoPopupSection-jsHide">
+                <div class="videoPopupSection__overlay"></div>
+                <div class="videoPopupSection__inner">
+                    <iframe class="videoPopupSection__video" src="https://www.youtube.com/embed/4lmEqpgg3B4" frameborder="0" allow="encrypted-media;"></iframe>
+                </div>
+            </section>
+            <section class="featuresPopupSection featuresPopupSection-jsHide">
+                <div class="featuresPopupSection__textWrap"><b class="featuresPopupSection__heading">36squared is a community within a building</b>
+                    <p class="featuresPopupSection__text"><span>36Squared welcomes “Partners” whose business or activities are not disruptive to other “Partners” in the building.  Generally, that means if your business involves loud music, sawing, chemicals, machinery, pounding, flamethrowers, elephants, dunk tanks (water spilling*), you’re not going to make a good neighbor.  </span><span>36Squared is a community focused on small businesses. </span><span>A building full of entrepreneurs, dreamers, and doers:</span>
+                    </p><b class="featuresPopupSection__lead">Do your ambitions fit in?</b>
+                    <button class="featuresPopupSection__btn btn">How about me?</button>
+                </div>
+                <div class="featuresPopupSection__listWrap">
+                    <ul class="featuresPopupSection__list">
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">01</span><span class="featuresPopupSection__itemText">Business to Business  (B2B) Services</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">02</span><span class="featuresPopupSection__itemText">Professional Offices</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">03</span><span class="featuresPopupSection__itemText">Start-up Ventures</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">04</span><span class="featuresPopupSection__itemText">Digital Web Services</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">05</span><span class="featuresPopupSection__itemText">Construction or Trades</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">06</span><span class="featuresPopupSection__itemText">Limited Retail Operations</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">07</span><span class="featuresPopupSection__itemText">Light Industrial / Manufacturing</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">08</span><span class="featuresPopupSection__itemText">Light Product / Package Assembly</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">09</span><span class="featuresPopupSection__itemText">Food Preparation</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">10</span><span class="featuresPopupSection__itemText">Storage Space</span>
+                        </li>
+                        <li class="featuresPopupSection__item"><span class="featuresPopupSection__itemNum">11</span><span class="featuresPopupSection__itemText">Showrooms for contractors or Fashion / Design</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
 
         <script src="static/js/separate-js/jquery-3.2.1.min.js"></script>
