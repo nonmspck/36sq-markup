@@ -8,13 +8,42 @@ html(class="no-js", lang="en")
     body.page
         |%=symbols=%
 
+        -
+            var indexSliderContent = [
+                {
+                    content: { 
+                        lead: 'Welcome to our Building!',
+                        text: 'We foster a small Business-to-Business community that complements to each other',
+                        btn: '<a class="textSlider__btn  textSlider__btn-takeTour  btn" href="#">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn  textSlider__btn-videoTour  textSlider__btn-transparent  btn">Virtual tour<i class="fas fa-play"></i></a>'
+                    },
+                    img: 'static/img/content/welcomeSlider__bgr-desktop.jpg'
+                },
+                {
+                    content: { 
+                        lead: 'Welcome to our Building!',
+                        text: 'We foster a small Business-to-Business community that complements to each other',
+                        btn: '<a class="textSlider__btn  textSlider__btn-takeTour  btn" href="#">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn  textSlider__btn-videoTour  textSlider__btn-transparent  btn">Virtual tour<i class="fas fa-play"></i></a>'
+                    },
+                    img: 'static/img/content/welcomeSlider__bgr-desktop.jpg'
+                },
+                {
+                    content: { 
+                        lead: 'Welcome to our Building!',
+                        text: 'We foster a small Business-to-Business community that complements to each other',
+                        btn: '<a class="textSlider__btn  textSlider__btn-takeTour  btn" href="#">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn  textSlider__btn-videoTour  textSlider__btn-transparent  btn">Virtual tour<i class="fas fa-play"></i></a>'
+                    },
+                    img: 'static/img/content/welcomeSlider__bgr-desktop.jpg'
+                }
+            ]
         include ../components/header/header.pug
+        +header(indexSliderContent)
 
         include ../components/indexContent/indexContent.pug
 
         include ../components/footer/footer.pug
 
         include ../components/popups/popups.pug
+        +popups("tour", "video", "features")
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

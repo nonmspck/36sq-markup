@@ -213,10 +213,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var $welcomeSlider = $(".textSlider");
-    var sliderCounter = $(".welcomeSlider__counter-top");
+    var sliderCounter_top = $(".welcomeSlider__counter-top");
     var sliderCounter_bottom = $(".welcomeSlider__counter-bottom");
+    var arrowsWrap = $(".welcomeSlider__arrowsWrap");
 
-    if ($welcomeSlider.length) {
+    if ($welcomeSlider.children(".textSlider__slide").length > 1) {
+        $(sliderCounter_top).removeClass("welcomeSlider__counter-hide");
+        $(sliderCounter_bottom).removeClass("welcomeSlider__counter-hide");
+        $(arrowsWrap).removeClass("welcomeSlider__arrowsWrap-hide");
+
         var currentSlide;
         var slidesCount;
         var nextSlide;
@@ -225,14 +230,23 @@ $(document).ready(function () {
             currentSlide = slick.slickCurrentSlide() + 1;
             slidesCount = slick.slideCount;
             nextSlide = currentSlide + 1;
-            $(sliderCounter).text("0" + currentSlide);
+
+            if (currentSlide < 10) {
+                $(sliderCounter_top).text("0" + currentSlide);
+            } else {
+                $(sliderCounter_top).text(currentSlide);
+            }
 
             if (currentSlide < slidesCount) {
                 if ($(sliderCounter_bottom).hasClass("welcomeSlider__counter-hide")) {
                     $(sliderCounter_bottom).removeClass("welcomeSlider__counter-hide");
                 }
 
-                $(sliderCounter_bottom).text("0" + nextSlide);
+                if (nextSlide < 10) {
+                    $(sliderCounter_bottom).text("0" + nextSlide);
+                } else {
+                    $(sliderCounter_bottom).text(nextSlide);
+                }
             } else {
                 $(sliderCounter_bottom).addClass("welcomeSlider__counter-hide");
             }
@@ -257,9 +271,11 @@ $(document).ready(function () {
             prevArrow: ".welcomeSlider__arrow-up",
             nextArrow: ".welcomeSlider__arrow-down"
         });
-    } else {
-        $(sliderCounter_top).addClass("welcomeSlider__counter-hide");
-        $(sliderCounter_bottom).addClass("welcomeSlider__counter-hide");
+
+        if (slidesCount < 2) {
+            $(sliderCounter_top).addClass("welcomeSlider__counter-hide");
+            $(sliderCounter_bottom).addClass("welcomeSlider__counter-hide");
+        }
     }
 
     var $anchorLink = $(".welcomeSlider__anchorLink");

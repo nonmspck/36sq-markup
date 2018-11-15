@@ -1,36 +1,38 @@
-section.welcomeSlider
-    .welcomeSlider__head
-        b.welcomeSlider__lead An artful business community
-        p.welcomeSlider__contacts
-            span.welcomeSlider__address <i class="fas fa-map-marker-alt"></i>
-                | 3636&nbsp;South&nbsp;Iron&nbsp;Street 
-                span | 
-                | Chicago&nbsp;IL&nbsp;60609
-            span.welcomeSlider__tel <i class="fas fa-mobile-alt"></i>(312)&nbsp;933-6556
-        a.welcomeSlider__btn.btn(href="#") Join us
-    .welcomeSlider__sliderWrap
-        .welcomeSlider__textSlider.textSlider
-            .textSlider__slide
-                b.textSlider__lead Welcome to our Building!
-                p.textSlider__text We foster a small Business-to-Business community that complements to each other
-                .textSlider__btnWrap
-                    a.textSlider__btn.textSlider__btn-takeTour.btn Take a tour <i class="fas fa-arrow-right"></i>
-                    a.textSlider__btn.textSlider__btn-videoTour.textSlider__btn-transparent.btn Virtual tour <i class="fas fa-play"></i>
-            .textSlider__slide
-                b.textSlider__lead Welcome to our Building!
-                p.textSlider__text We foster a small Business-to-Business community that complements to each other
-                .textSlider__btnWrap
-                    a.textSlider__btn.textSlider__btn-takeTour.btn Take a tour <i class="fas fa-arrow-right"></i>
-                    a.textSlider__btn.textSlider__btn-videoTour.textSlider__btn-transparent.btn Virtual tour <i class="fas fa-play"></i>
-            .textSlider__slide
-                b.textSlider__lead Welcome to our Building!
-                p.textSlider__text We foster a small Business-to-Business community that complements to each other
-                .textSlider__btnWrap
-                    a.textSlider__btn.textSlider__btn-takeTour.btn Take a tour <i class="fas fa-arrow-right"></i>
-                    a.textSlider__btn.textSlider__btn-videoTour.textSlider__btn-transparent.btn Virtual tour <i class="fas fa-play"></i>
-        .welcomeSlider__arrowsWrap
-            button.welcomeSlider__arrow.welcomeSlider__arrow-up
-            button.welcomeSlider__arrow.welcomeSlider__arrow-down
-        .welcomeSlider__counter.welcomeSlider__counter-top 00
-        .welcomeSlider__counter.welcomeSlider__counter-bottom 00
-    a.welcomeSlider__anchorLink(href="#main") down
+mixin welcomeSlide(content, img)
+    - 
+        if (img)
+            var slideStyle = "background: rgba(0, 0, 0, .15) url('" + img + "') no-repeat top center; background-size: cover;"
+        
+    .textSlider__slide(style=slideStyle)
+        if (content.lead)
+            b.textSlider__lead #{content.lead}
+        if (content.text)
+            p.textSlider__text #{content.text}
+                if (content.other)
+                    | #{content.other}
+        if (content.btn)
+            .textSlider__btnWrap!= content.btn
+
+mixin welcomeSlider(contentList)
+    section.welcomeSlider
+        .welcomeSlider__head
+            b.welcomeSlider__lead An artful business community
+            p.welcomeSlider__contacts
+                span.welcomeSlider__address <i class="fas fa-map-marker-alt"></i>
+                    | 3636&nbsp;South&nbsp;Iron&nbsp;Street 
+                    span | 
+                    | Chicago&nbsp;IL&nbsp;60609
+                span.welcomeSlider__tel <i class="fas fa-mobile-alt"></i>(312)&nbsp;933-6556
+            a.welcomeSlider__btn.btn(href="#") Join us
+        .welcomeSlider__sliderWrap
+            .welcomeSlider__textSlider.textSlider
+                
+                each item in contentList
+                    +welcomeSlide(item.content, item.img)
+
+            .welcomeSlider__arrowsWrap.welcomeSlider__arrowsWrap-hide
+                button.welcomeSlider__arrow.welcomeSlider__arrow-up
+                button.welcomeSlider__arrow.welcomeSlider__arrow-down
+            .welcomeSlider__counter.welcomeSlider__counter-hide.welcomeSlider__counter-top 00
+            .welcomeSlider__counter.welcomeSlider__counter-hide.welcomeSlider__counter-bottom 00
+        a.welcomeSlider__anchorLink(href="#main") down

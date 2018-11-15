@@ -1,6 +1,10 @@
-.popups
-    include ../tourPopupSection/tourPopupSection.pug
-
-    include ../videoPopupSection/videoPopupSection.pug
-
-    include ../featuresPopupSection/featuresPopupSection.pug
+mixin popups(...popupsList)
+    if (popupsList.length > 0)
+        .popups
+            each item in popupsList
+                if (item == "tour") 
+                    include ../tourPopupSection/tourPopupSection.pug
+                else if (item == "video")
+                    include ../videoPopupSection/videoPopupSection.pug
+                else if (item == "features")
+                    include ../featuresPopupSection/featuresPopupSection.pug

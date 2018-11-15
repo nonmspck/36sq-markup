@@ -1,3 +1,19 @@
-header.header
-    include ../headerNav/headerNav.pug
-    include ../welcomeSlider/welcomeSlider.pug
+//- example
+//- -
+//-     var sliderContent = [
+//-         {
+//-             content: { 
+//-                 lead: 'Welcome to our Building!',
+//-                 text: 'We foster a small Business-to-Business community that complements to each other',
+//-                 other: "",
+//-                 btn: '<a class="textSlider__btn  textSlider__btn-takeTour  btn" href="#">Take a tour <i class="fas fa-arrow-right"></i></a><a class="textSlider__btn  textSlider__btn-videoTour  textSlider__btn-transparent  btn">Virtual tour<i class="fas fa-play"></i></a>'
+//-             },
+//-             img: 'static/img/content/welcomeSlider__bgr-desktop.jpg'
+//-         }]
+
+mixin header(sliderContent)
+    header.header
+        include ../headerNav/headerNav.pug
+
+        include ../welcomeSlider/welcomeSlider.pug
+        +welcomeSlider(sliderContent)

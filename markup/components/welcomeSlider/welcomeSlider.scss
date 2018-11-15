@@ -235,6 +235,10 @@
     right: 30px;
     top: 48%;
 
+    &-hide {
+        display: none;
+    }
+
     @media (min-width: $grid-sl) {
         right: 80px;
     }

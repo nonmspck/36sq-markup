@@ -11355,6 +11355,10 @@ input {
   top: 48%;
 }
 
+.welcomeSlider__arrowsWrap-hide {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .welcomeSlider__arrowsWrap {
     right: 80px;
