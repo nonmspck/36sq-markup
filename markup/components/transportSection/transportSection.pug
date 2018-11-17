@@ -1,0 +1,25 @@
+- var transportSection__array = [{ img: "static/img/content/transportSection__img-1.jpg", heading: "Metra CTA" }, { img: "static/img/content/transportSection__img-2.jpg", heading: "Metra Rail" }, { img: "static/img/content/transportSection__img-3.jpg", heading: "Advance timetables eff. Sep. 2018" }, { img: "static/img/content/transportSection__img-4.jpg", heading: "Divvy: Chicago’s Bike share Program | Divvy Bikes" }]
+
+
+mixin transportSection__listMixin(item)
+    li.transportSection__item
+        .transportSection__imgWrap
+            img.transportSection__img(src=item.img, alt="")
+        h3.transportSection__itemHeading 
+            | #{item.heading}
+        a.transpotrSection__link.link(href="#")
+            | visit website
+            span →
+
+section.transportSection
+    .transportSection__inner
+        .transportSection__head
+            b.transportSection__lead.sectionHeading
+                | how to get to 36sq
+            h2.transportSection__heading
+                | City Transport & Schedule
+
+        ul.transportSection__list
+
+            each item in transportSection__array
+                +transportSection__listMixin(item)

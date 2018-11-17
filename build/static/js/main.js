@@ -62,6 +62,7 @@ $(document).ready(function () {
 
 "use strict";
 "use strict";
+"use strict";
 
 var $descrNavSlider = $(".navSlider__slider");
 
@@ -192,6 +193,7 @@ $(document).ready(function () {
         $(".tourPopupSection").removeClass("tourPopupSection-jsHide");
     });
 });
+"use strict";
 "use strict";
 
 $(document).ready(function () {
