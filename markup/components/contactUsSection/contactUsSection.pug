@@ -1,0 +1,35 @@
+section.contactUsSection
+    .contactUsSection__inner
+        .contactUsSection__head
+            b.contactUsSection__lead.sectionHeading
+                | get in touch
+            h2.contactUsSection__heading
+                | Contact Us
+        form.contactUsSection__form(action="", method="post")
+            p.contactUsSection__formLine
+                input.contactUsSection__input.input(type="text", name="fname", placeholder="First Name *")
+                input.contactUsSection__input.input(type="text", name="lname", placeholder="Last Name")
+            p.contactUsSection__formLine
+                input.contactUsSection__input.input(type="text", name="cname", placeholder="Company Name")
+            p.contactUsSection__formLine
+                input.contactUsSection__input.input(type="tel", name="phone", placeholder="Phone *")
+                input.contactUsSection__input.input(type="email", name="email", placeholder="Email *")
+            p.contactUsSection__formLine
+                input.contactUsSection__input.input(type="text", name="type", placeholder="Type of Business")
+            p.contactUsSection__formLine
+                textarea.contactUsSection__input.contactUsSection__input-area.input(name="msg", placeholder="Your message *")
+            button.contactUsSection__btn.link(type="submit")
+                | send message
+                span →
+        .contactUsSection__mapWrap
+            <iframe class="contactUsSection__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.039350909108!2d-87.66208998424494!3d41.82745077922628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2dcd6abd8fbf%3A0x1d0c6541436ea619!2zMzYzNiBTIElyb24gU3QsIENoaWNhZ28sIElMIDYwNjA5LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1542546324738" frameborder="0" style="border:0" allowfullscreen></iframe>
+            p.contactUsSection__mapContacts
+                b.contactUsSection__contactsHeading
+                    | 36Squared Community
+                span.contactUsSection__contacts
+                    | <i class="fas fa-mobile-alt"></i>(312)&nbsp;933-6556
+                span.contactUsSection__contacts
+                    | <i class="fas fa-map-marker-alt"></i>3636&nbsp;South&nbsp;Iron&nbsp;Street | Chicago&nbsp;IL&nbsp;60609
+                
+
+                                    

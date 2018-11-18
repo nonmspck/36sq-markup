@@ -63,6 +63,7 @@ $(document).ready(function () {
 "use strict";
 "use strict";
 "use strict";
+"use strict";
 
 var $descrNavSlider = $(".navSlider__slider");
 
@@ -101,6 +102,7 @@ $weSlider.slick({
     prevArrow: ".navSlider__btn-prev",
     nextArrow: ".navSlider__btn-next"
 });
+"use strict";
 "use strict";
 
 $(document).ready(function () {
@@ -179,6 +181,7 @@ $introSlider.slick({
     prevArrow: ".introSlider__control-prev",
     nextArrow: ".introSlider__control-next"
 });
+"use strict";
 "use strict";
 "use strict";
 "use strict";

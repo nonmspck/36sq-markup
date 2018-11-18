@@ -1,0 +1,110 @@
+mixin directionsSection__pathMixin(array)
+    each item in array
+        li.directionsSection__pathItem
+            | #{item}    
+
+.directionsSection
+    .directionsSection__inner
+        section.directionsSection__directions
+            h2.directionsSection__heading
+                | Directions to 36SQ
+            ul.directionsSection__list
+                li.directionsSection__listItem
+                    input.directionsSection__checkbox#directionsSection__checkbox-1(type="checkbox")
+                    label.directionsSection__label(for="directionsSection__checkbox-1")
+                        span.directionsSection__num
+                            | 01
+                        span.directionsSection__from
+                            | From N US 41 (Lake Shore Drive)
+                        span.directionsSection__arrow
+                            | →
+                    .directionsSection__pathWrap
+                        ol.directionsSection__pathList
+
+                            - var directionsSection__pathArray = ["Head south on US-41 S (Lake Shore Drive)", "Merge onto S Damen Ave", "Turn left onto W 33rd St", "Continue straight to stay on W 33rd St", "Turn right onto S Ashland Ave", "Turn left onto W 35th St", "Turn right onto S Iron St"]
+
+                            +directionsSection__pathMixin(directionsSection__pathArray)
+
+                        span.directionsSection__pathDest
+                            | Destination will be on the right
+                li.directionsSection__listItem
+                    input.directionsSection__checkbox#directionsSection__checkbox-2(type="checkbox")
+                    label.directionsSection__label(for="directionsSection__checkbox-2")
+                        span.directionsSection__num
+                            | 02
+                        span.directionsSection__from
+                            | From S US 41 (Lake Shore Drive)
+                        span.directionsSection__arrow
+                            | →
+                    .directionsSection__pathWrap
+                        ol.directionsSection__pathList
+
+                            - var directionsSection__pathArray = ["Head south on US-41 S (Lake Shore Drive)", "Merge onto S Damen Ave", "Turn left onto W 33rd St", "Continue straight to stay on W 33rd St", "Turn right onto S Ashland Ave", "Turn left onto W 35th St", "Turn right onto S Iron St"]
+
+                            +directionsSection__pathMixin(directionsSection__pathArray)
+
+                        span.directionsSection__pathDest
+                            | Destination will be on the right
+                li.directionsSection__listItem
+                    input.directionsSection__checkbox#directionsSection__checkbox-3(type="checkbox")
+                    label.directionsSection__label(for="directionsSection__checkbox-3")
+                        span.directionsSection__num
+                            | 03
+                        span.directionsSection__from
+                            | From I-55 South: Take exit at Ashland
+                        span.directionsSection__arrow
+                            | →
+                    .directionsSection__pathWrap
+                        ol.directionsSection__pathList
+
+                            - var directionsSection__pathArray = ["Head south on US-41 S (Lake Shore Drive)", "Merge onto S Damen Ave", "Turn left onto W 33rd St", "Continue straight to stay on W 33rd St", "Turn right onto S Ashland Ave", "Turn left onto W 35th St", "Turn right onto S Iron St"]
+
+                            +directionsSection__pathMixin(directionsSection__pathArray)
+
+                        span.directionsSection__pathDest
+                            | Destination will be on the right
+                li.directionsSection__listItem
+                    input.directionsSection__checkbox#directionsSection__checkbox-4(type="checkbox")
+                    label.directionsSection__label(for="directionsSection__checkbox-4")
+                        span.directionsSection__num
+                            | 04
+                        span.directionsSection__from
+                            | From I-90/94: Take exit at 35th Street
+                        span.directionsSection__arrow
+                            | →
+                    .directionsSection__pathWrap
+                        ol.directionsSection__pathList
+
+                            - var directionsSection__pathArray = ["Head south on US-41 S (Lake Shore Drive)", "Merge onto S Damen Ave", "Turn left onto W 33rd St", "Continue straight to stay on W 33rd St", "Turn right onto S Ashland Ave", "Turn left onto W 35th St", "Turn right onto S Iron St"]
+
+                            +directionsSection__pathMixin(directionsSection__pathArray)
+
+                        span.directionsSection__pathDest
+                            | Destination will be on the right
+        section.directionsSection__parking
+            h2.directionsSection__heading
+                | Parking
+            .directionsSection__parkingElem
+                h3.directionsSection__parkingHeading
+                    | Street Parking
+                p.directionsSection__parkingText
+                    | Free street parking available on Iron Street on the east end of the building.  Look for Marz Brewing, 36Squared is the next building and has street parking outside the front entrance.
+            .directionsSection__parkingElem
+                h3.directionsSection__parkingHeading
+                    | Parking Lot
+                ul.directionsSection__parkingList
+                    li.directionsSection__parkingListItem
+                        span.directionsSection__parkingNum
+                            | 01
+                        p.span.directionsSection__parkingText
+                            | Enter the gated parking lot through our shared cobbled stone alleyway between 36 Squared and Marz Taproom from 8AM to 5PM. 
+                    li.directionsSection__parkingListItem
+                        span.directionsSection__parkingNum
+                            | 02
+                        p.span.directionsSection__parkingText
+                            | Pass the (4) loading docks on the left, turn left into the driveway located to the West side of 36 Squared; this driveway will enter into the gated parking lot on the South side of the building.
+                    li.directionsSection__parkingListItem
+                        span.directionsSection__parkingNum
+                            | 03
+                        p.span.directionsSection__parkingText
+                            | Park along the south fence or southern face of the building.

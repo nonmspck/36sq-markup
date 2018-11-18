@@ -1,0 +1,91 @@
+.schedulePageSection {
+    font: 600 16px/1.5 "Panton", sans-serif;
+    letter-spacing: 0.2px;
+    color: $white;
+
+    background-color: $red;
+}
+
+.schedulePageSection__inner {
+    padding: 50px 30px;
+
+    @media (min-width: $grid-sl) {
+        padding: 100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        max-width: 1440px;
+        padding: 210px 100px 135px;
+    }
+
+    @media (min-width: $grid-lm) {
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.schedulePageSection__lead {
+    font: 700 32px/1.3 "Panton", sans-serif;
+    letter-spacing: 0.6px;
+
+    color: $white;
+
+    @media (min-width: $grid-lm) {
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+}
+
+.schedulePageSection__form {
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    @media (min-width: $grid-ls) {
+        width: 45%;
+        margin-top: 100px;
+        max-width: 500px;
+    }
+
+    @media (min-width: $grid-lm) {
+        margin-top: 0;
+
+        flex: initial;
+    }
+}
+
+.schedulePageSection__input {
+    margin-bottom: 25px;
+
+    @media (min-width: $grid-lm) {
+        width: 100%;
+    }
+}
+
+.schedulePageSection__button {
+    padding: 0;
+    border: none;
+
+    font: 700 14px/1.5 "Panton", sans-serif;
+    color: $white;
+    letter-spacing: 1px;
+
+    background-color: transparent;
+
+    span {
+        margin-left: 8px;
+    }
+
+    &:hover,
+    &:active {
+        opacity: .7;
+    }
+
+    @media (min-width: $grid-lm) {
+        margin-left: auto;
+    }
+}

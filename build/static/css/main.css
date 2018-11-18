@@ -9151,6 +9151,262 @@ input {
   }
 }
 
+.contactUsSection {
+  font: 600 16px/1.8 "Panton", sans-serif;
+  color: #333333;
+  letter-spacing: 0.2px;
+}
+
+.contactUsSection__inner {
+  padding: 40px 0 0;
+}
+
+@media (min-width: 768px) {
+  .contactUsSection__inner {
+    padding: 80px 0 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__inner {
+    padding: 80px 100px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .contactUsSection__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 100px 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.contactUsSection__head {
+  margin: 0 0 20px;
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .contactUsSection__head {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__head {
+    margin: 0 0 60px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1140px) {
+  .contactUsSection__head {
+    width: 100%;
+  }
+}
+
+.contactUsSection__lead {
+  margin: 0 0 0 -30px;
+}
+
+@media (min-width: 768px) {
+  .contactUsSection__lead {
+    margin: 0 0 0 -100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__lead {
+    margin: 0 -100px 0 0;
+    padding: 0 100px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contactUsSection__lead::before {
+    right: 0;
+    left: auto;
+  }
+}
+
+.contactUsSection__heading {
+  margin: 20px 0 0;
+  font: 700 32px/1.3 "Panton", sans-serif;
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__heading {
+    margin: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.contactUsSection__form {
+  margin: 0 0 30px;
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .contactUsSection__form {
+    margin: 0 0 50px;
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__form {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1140px) {
+  .contactUsSection__form {
+    width: 48%;
+    margin: 0;
+  }
+}
+
+.contactUsSection__formLine {
+  margin: 0;
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__formLine {
+    margin: 0 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.contactUsSection__input {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.contactUsSection__input-area {
+  height: 120px;
+  resize: none;
+}
+
+.contactUsSection__input::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.contactUsSection__input:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.contactUsSection__input::-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.contactUsSection__input::placeholder {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__input {
+    margin-bottom: 0;
+  }
+  .contactUsSection__input:not(:only-child) {
+    width: 48%;
+  }
+}
+
+.contactUsSection__btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 960px) {
+  .contactUsSection__btn {
+    margin: 40px 0 0;
+  }
+}
+
+.contactUsSection__mapWrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+@media (min-width: 1140px) {
+  .contactUsSection__mapWrap {
+    width: 48%;
+    height: auto;
+  }
+}
+
+.contactUsSection__map {
+  width: 100%;
+  height: 100%;
+}
+
+.contactUsSection__mapContacts {
+  width: 70%;
+  margin: 0;
+  padding: 40px 30px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .contactUsSection__mapContacts {
+    width: 64%;
+  }
+}
+
+.contactUsSection__contactsHeading {
+  display: block;
+  font: 700 16px/1.8 "Panton", sans-serif;
+  color: #333333;
+  letter-spacing: 0.2px;
+}
+
+.contactUsSection__contacts {
+  margin: 8px 0 0;
+  display: block;
+  font: 600 14px/2.1 "Panton" , sans-serif;
+  color: rgba(51, 51, 51, 0.8);
+  letter-spacing: 0.2px;
+}
+
+.contactUsSection__contacts i {
+  margin: 0 5px 0 0;
+}
+
 .descrSection {
   font: 400 16px/1.5 "Panton", sans-serif;
   color: rgba(51, 51, 51, 0.7);
@@ -9384,6 +9640,196 @@ input {
 
 .weSlider__link {
   margin-top: 20px;
+}
+
+.directionsSection {
+  border-top: 1px solid #f5f7fa;
+  font: 400 16px/1.8 "Panton", sans-serif;
+  color: rgba(51, 51, 51, 0.7);
+  letter-spacing: 0.2px;
+}
+
+.directionsSection__inner {
+  padding: 40px 30px;
+}
+
+@media (min-width: 768px) {
+  .directionsSection__inner {
+    padding: 80px 100px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .directionsSection__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.directionsSection__heading {
+  margin: 0 0 25px;
+  font: 700 32px/1.3 "Panton", sans-serif;
+  color: #333333;
+  letter-spacing: 0.6px;
+}
+
+.directionsSection__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directionsSection__listItem {
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.directionsSection__listItem:not(:last-child) {
+  margin: 0 0 8px;
+}
+
+.directionsSection__checkbox {
+  display: none;
+}
+
+.directionsSection__checkbox:checked ~ .directionsSection__label > .directionsSection__arrow {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+.directionsSection__checkbox:checked ~ .directionsSection__pathWrap {
+  display: block;
+}
+
+.directionsSection__label {
+  padding: 15px 40px 15px 20px;
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.directionsSection__label:hover > .directionsSection__arrow {
+  opacity: 1;
+}
+
+.directionsSection__arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  font: 700 20px/1 "Panton", sans-serif;
+  color: #333333;
+  opacity: .2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.directionsSection__num {
+  margin: 0 10px 0 0;
+  font: 700 18px/1.2 "Panton", sans-serif;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #e5002e;
+}
+
+@media (min-width: 768px) {
+  .directionsSection__num {
+    margin: 0 25px 0 0;
+  }
+}
+
+.directionsSection__from {
+  font: 700 16px/1.2 "Panton", sans-serif;
+  color: #333333;
+  letter-spacing: 0.7px;
+}
+
+.directionsSection__pathWrap {
+  padding: 30px;
+  display: none;
+  font: 400 14px/2.1 "Panton", sans-serif;
+}
+
+.directionsSection__pathList {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+
+.directionsSection__directions {
+  margin: 0 0 50px;
+}
+
+@media (min-width: 1140px) {
+  .directionsSection__directions {
+    width: 48%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1140px) {
+  .directionsSection__parking {
+    width: 48%;
+    padding: 0 40px;
+  }
+}
+
+.directionsSection__parkingElem {
+  margin: 30px 0 0;
+}
+
+.directionsSection__parkingHeading {
+  margin: 0 0 20px;
+  font: 700 18px/1.2 "Panton", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 0.75px;
+}
+
+.directionsSection__parkingText {
+  margin: 0;
+  font: 400 16px/1.8 "Panton", sans-serif;
+  color: rgba(51, 51, 51, 0.7);
+  letter-spacing: 0.2px;
+}
+
+.directionsSection__parkingList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directionsSection__parkingListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.directionsSection__parkingListItem:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.directionsSection__parkingNum {
+  width: 32px;
+  height: 32px;
+  margin: 0 15px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font: 700 18px/1.7 "Panton", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  text-align: center;
+  background-color: #e5002e;
 }
 
 .featuresPopupSection {
@@ -10516,6 +10962,119 @@ input {
   z-index: 11;
 }
 
+.schedulePageSection {
+  font: 600 16px/1.5 "Panton", sans-serif;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  background-color: #e5002e;
+}
+
+.schedulePageSection__inner {
+  padding: 50px 30px;
+}
+
+@media (min-width: 768px) {
+  .schedulePageSection__inner {
+    padding: 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .schedulePageSection__inner {
+    max-width: 1440px;
+    padding: 210px 100px 135px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .schedulePageSection__inner {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.schedulePageSection__lead {
+  font: 700 32px/1.3 "Panton", sans-serif;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+@media (min-width: 1140px) {
+  .schedulePageSection__lead {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+}
+
+.schedulePageSection__form {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@media (min-width: 960px) {
+  .schedulePageSection__form {
+    width: 45%;
+    margin-top: 100px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .schedulePageSection__form {
+    margin-top: 0;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+}
+
+.schedulePageSection__input {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1140px) {
+  .schedulePageSection__input {
+    width: 100%;
+  }
+}
+
+.schedulePageSection__button {
+  padding: 0;
+  border: none;
+  font: 700 14px/1.5 "Panton", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+.schedulePageSection__button span {
+  margin-left: 8px;
+}
+
+.schedulePageSection__button:hover, .schedulePageSection__button:active {
+  opacity: .7;
+}
+
+@media (min-width: 1140px) {
+  .schedulePageSection__button {
+    margin-left: auto;
+  }
+}
+
 .scheduleSection {
   font: 600 16px/1.5 "Panton", sans-serif;
   letter-spacing: 0.2px;
@@ -11120,8 +11679,13 @@ input {
 
 @media (min-width: 960px) {
   .transportSection__item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .transportSection__item {
     width: 24%;
-    max-width: 295px;
   }
 }
 
@@ -11130,11 +11694,23 @@ input {
   overflow-y: hidden;
 }
 
+@media (min-width: 960px) {
+  .transportSection__imgWrap {
+    max-height: auto;
+  }
+}
+
+@media (min-width: 1140px) {
+  .transportSection__imgWrap {
+    max-width: 300px;
+  }
+}
+
 .transportSection__img {
   width: 100%;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .transportSection__img {
     width: 300px;
   }
@@ -11374,7 +11950,11 @@ input {
 @media (min-width: 768px) {
   .textSlider__slide {
     min-height: 100vh;
+    height: 100vh;
     padding: 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

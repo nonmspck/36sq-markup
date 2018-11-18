@@ -79,7 +79,7 @@
                 </div><a class="welcomeSlider__anchorLink" href="#main">down</a>
             </section>
         </header>
-        <main class="contactsContent" id="main">
+        <main class="contactContent" id="main">
             <section class="transportSection">
                 <div class="transportSection__inner">
                     <div class="transportSection__head"><b class="transportSection__lead sectionHeading">how to get to 36sq</b>
@@ -113,7 +113,143 @@
                     </ul>
                 </div>
             </section>
-            <!-- include ../scheduleSection/scheduleSection.pug-->
+            <section class="contactUsSection">
+                <div class="contactUsSection__inner">
+                    <div class="contactUsSection__head"><b class="contactUsSection__lead sectionHeading">get in touch</b>
+                        <h2 class="contactUsSection__heading">Contact Us</h2>
+                    </div>
+                    <form class="contactUsSection__form" action="" method="post">
+                        <p class="contactUsSection__formLine">
+                            <input class="contactUsSection__input input" type="text" name="fname" placeholder="First Name *">
+                            <input class="contactUsSection__input input" type="text" name="lname" placeholder="Last Name">
+                        </p>
+                        <p class="contactUsSection__formLine">
+                            <input class="contactUsSection__input input" type="text" name="cname" placeholder="Company Name">
+                        </p>
+                        <p class="contactUsSection__formLine">
+                            <input class="contactUsSection__input input" type="tel" name="phone" placeholder="Phone *">
+                            <input class="contactUsSection__input input" type="email" name="email" placeholder="Email *">
+                        </p>
+                        <p class="contactUsSection__formLine">
+                            <input class="contactUsSection__input input" type="text" name="type" placeholder="Type of Business">
+                        </p>
+                        <p class="contactUsSection__formLine">
+                            <textarea class="contactUsSection__input contactUsSection__input-area input" name="msg" placeholder="Your message *"></textarea>
+                        </p>
+                        <button class="contactUsSection__btn link" type="submit">send message<span>→</span>
+                        </button>
+                    </form>
+                    <div class="contactUsSection__mapWrap">
+                        <iframe class="contactUsSection__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.039350909108!2d-87.66208998424494!3d41.82745077922628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2dcd6abd8fbf%3A0x1d0c6541436ea619!2zMzYzNiBTIElyb24gU3QsIENoaWNhZ28sIElMIDYwNjA5LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1542546324738"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <p class="contactUsSection__mapContacts"><b class="contactUsSection__contactsHeading">36Squared Community</b><span class="contactUsSection__contacts"><i class="fas fa-mobile-alt"></i>(312)&nbsp;933-6556</span><span class="contactUsSection__contacts"><i class="fas fa-map-marker-alt"></i>3636&nbsp;South&nbsp;Iron&nbsp;Street | Chicago&nbsp;IL&nbsp;60609</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="directionsSection">
+                <div class="directionsSection__inner">
+                    <section class="directionsSection__directions">
+                        <h2 class="directionsSection__heading">Directions to 36SQ</h2>
+                        <ul class="directionsSection__list">
+                            <li class="directionsSection__listItem">
+                                <input class="directionsSection__checkbox" id="directionsSection__checkbox-1" type="checkbox">
+                                <label class="directionsSection__label" for="directionsSection__checkbox-1"><span class="directionsSection__num">01</span><span class="directionsSection__from">From N US 41 (Lake Shore Drive)</span><span class="directionsSection__arrow">→</span>
+                                </label>
+                                <div class="directionsSection__pathWrap">
+                                    <ol class="directionsSection__pathList">
+                                        <li class="directionsSection__pathItem">Head south on US-41 S (Lake Shore Drive)</li>
+                                        <li class="directionsSection__pathItem">Merge onto S Damen Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Continue straight to stay on W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Ashland Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 35th St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Iron St</li>
+                                    </ol><span class="directionsSection__pathDest">Destination will be on the right</span>
+                                </div>
+                            </li>
+                            <li class="directionsSection__listItem">
+                                <input class="directionsSection__checkbox" id="directionsSection__checkbox-2" type="checkbox">
+                                <label class="directionsSection__label" for="directionsSection__checkbox-2"><span class="directionsSection__num">02</span><span class="directionsSection__from">From S US 41 (Lake Shore Drive)</span><span class="directionsSection__arrow">→</span>
+                                </label>
+                                <div class="directionsSection__pathWrap">
+                                    <ol class="directionsSection__pathList">
+                                        <li class="directionsSection__pathItem">Head south on US-41 S (Lake Shore Drive)</li>
+                                        <li class="directionsSection__pathItem">Merge onto S Damen Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Continue straight to stay on W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Ashland Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 35th St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Iron St</li>
+                                    </ol><span class="directionsSection__pathDest">Destination will be on the right</span>
+                                </div>
+                            </li>
+                            <li class="directionsSection__listItem">
+                                <input class="directionsSection__checkbox" id="directionsSection__checkbox-3" type="checkbox">
+                                <label class="directionsSection__label" for="directionsSection__checkbox-3"><span class="directionsSection__num">03</span><span class="directionsSection__from">From I-55 South: Take exit at Ashland</span><span class="directionsSection__arrow">→</span>
+                                </label>
+                                <div class="directionsSection__pathWrap">
+                                    <ol class="directionsSection__pathList">
+                                        <li class="directionsSection__pathItem">Head south on US-41 S (Lake Shore Drive)</li>
+                                        <li class="directionsSection__pathItem">Merge onto S Damen Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Continue straight to stay on W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Ashland Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 35th St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Iron St</li>
+                                    </ol><span class="directionsSection__pathDest">Destination will be on the right</span>
+                                </div>
+                            </li>
+                            <li class="directionsSection__listItem">
+                                <input class="directionsSection__checkbox" id="directionsSection__checkbox-4" type="checkbox">
+                                <label class="directionsSection__label" for="directionsSection__checkbox-4"><span class="directionsSection__num">04</span><span class="directionsSection__from">From I-90/94: Take exit at 35th Street</span><span class="directionsSection__arrow">→</span>
+                                </label>
+                                <div class="directionsSection__pathWrap">
+                                    <ol class="directionsSection__pathList">
+                                        <li class="directionsSection__pathItem">Head south on US-41 S (Lake Shore Drive)</li>
+                                        <li class="directionsSection__pathItem">Merge onto S Damen Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Continue straight to stay on W 33rd St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Ashland Ave</li>
+                                        <li class="directionsSection__pathItem">Turn left onto W 35th St</li>
+                                        <li class="directionsSection__pathItem">Turn right onto S Iron St</li>
+                                    </ol><span class="directionsSection__pathDest">Destination will be on the right</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="directionsSection__parking">
+                        <h2 class="directionsSection__heading">Parking</h2>
+                        <div class="directionsSection__parkingElem">
+                            <h3 class="directionsSection__parkingHeading">Street Parking</h3>
+                            <p class="directionsSection__parkingText">Free street parking available on Iron Street on the east end of the building. Look for Marz Brewing, 36Squared is the next building and has street parking outside the front entrance.</p>
+                        </div>
+                        <div class="directionsSection__parkingElem">
+                            <h3 class="directionsSection__parkingHeading">Parking Lot</h3>
+                            <ul class="directionsSection__parkingList">
+                                <li class="directionsSection__parkingListItem"><span class="directionsSection__parkingNum">01</span>
+                                    <p class="span directionsSection__parkingText">Enter the gated parking lot through our shared cobbled stone alleyway between 36 Squared and Marz Taproom from 8AM to 5PM.</p>
+                                </li>
+                                <li class="directionsSection__parkingListItem"><span class="directionsSection__parkingNum">02</span>
+                                    <p class="span directionsSection__parkingText">Pass the (4) loading docks on the left, turn left into the driveway located to the West side of 36 Squared; this driveway will enter into the gated parking lot on the South side of the building.</p>
+                                </li>
+                                <li class="directionsSection__parkingListItem"><span class="directionsSection__parkingNum">03</span>
+                                    <p class="span directionsSection__parkingText">Park along the south fence or southern face of the building.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="schedulePageSection">
+                <div class="schedulePageSection__inner"><b class="schedulePageSection__lead">Schedule your appointment</b>
+                    <form class="schedulePageSection__form" action="" method="post">
+                        <input class="schedulePageSection__input input" type="email" placeholder="Enter your email">
+                        <button class="schedulePageSection__button link" type="submit">schedule <span>→</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footerNav footer__nav">

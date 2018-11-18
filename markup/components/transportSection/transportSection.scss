@@ -81,8 +81,11 @@
     }
 
     @media (min-width: $grid-ls) {
+        width: 49%;
+    }
+
+    @media (min-width: $grid-lm) {
         width: 24%;
-        max-width: 295px;
     }
 }
 
@@ -90,12 +93,20 @@
     max-height: 350px;
 
     overflow-y: hidden;
+
+    @media (min-width: $grid-ls) {
+        max-height: auto;
+    }
+
+    @media (min-width: $grid-lm) {
+        max-width: 300px;
+    }
 }
 
 .transportSection__img {
     width: 100%;
 
-    @media (min-width: $grid-ls) {
+    @media (min-width: $grid-lm) {
         width: 300px;
     }
 }
