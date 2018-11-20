@@ -1,0 +1,142 @@
+.partnersSection {
+    font: 700 18px/1.5 "Panton", sans-serif;
+    color: $darkgrey;
+    letter-spacing: 0.2px;
+}
+
+.partnersSection__inner {
+    padding: 40px 30px;
+
+    @media (min-width: $grid-sl) {
+        padding: 80px 100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        padding: 80px 100px 40px;
+    }
+
+    @media (min-width: $grid-lm) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.partnersSection__heading {
+    margin: 0 0 30px -30px;
+
+    @media (min-width: $grid-sl) {
+        margin: 0 0 40px -100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        margin: 0 -100px 40px 0;
+        padding: 0 100px 0 0;
+
+        text-align: right;
+
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
+.partnersSection__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media (min-width: $grid-ls) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+}
+
+.partnersSection__item {
+    width: 100%;
+
+    &:not(:last-child) {
+        margin: 0 0 30px;
+
+        @media (min-width: $grid-sl) {
+            margin: 0 0 40px;
+        }
+    }
+
+    &:hover .partnersSection__itemLink {
+        color: $red;
+    }
+
+    @media (min-width: $grid-ls) {
+        width: 48%;
+        margin: 0 0 40px;
+    }
+
+    @media (min-width: $grid-lm) {
+        width: 24%;
+        max-width: 295px;
+        margin: 0 0 30px;
+    }
+}
+
+.partnersSection__itemImgWrap {
+    width: 100%;
+    height: 295px;
+
+    position: relative;
+
+    background-color: rgba($darkgrey, .03);
+
+    &-red {
+        background-color: $red;
+    }
+
+    &::after {
+        content: "";
+
+        display: block;
+
+        padding-top: 100%;
+    }
+
+    @media (min-width: $grid-ls) {
+        height: auto;
+    }
+}
+
+.partnersSection__itemImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.partnersSection__itemHeading {
+    margin: 20px 0;
+}
+
+.partnersSection__itemLink {
+    @media (min-width: $grid-ls) {
+        color: rgba($red, 0);
+    }
+}
+
+.partnersSection__imgWrapLink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+
+    color: $white;
+}
+
+.partnersSection__itemLead {
+    margin: 20px 0 0;
+
+    display: block;
+
+    color: $red;
+}
