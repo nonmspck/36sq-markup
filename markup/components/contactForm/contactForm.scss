@@ -1,6 +1,11 @@
 // main
 
 .contactForm {
+    border: {
+        top: 1px solid $lightgrey;
+        bottom: 1px solid $lightgrey;
+    }
+
     font: 600 16px/1.5 "Panton", sans-serif;
     color: rgba($darkgrey, .3);
     letter-spacing: 0.2px;
