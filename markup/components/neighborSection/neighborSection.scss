@@ -1,0 +1,111 @@
+.neighborSection {
+    border: {
+        top: 1px solid $lightgrey-2;
+        bottom: 1px solid $lightgrey-2;
+    }
+
+    font: 700 16px/2.5 "Panton", sans-serif;
+    color: $darkgrey;
+    letter-spacing: 0.6px;
+}
+
+.neighborSection__inner {
+    padding: 40px 30px;
+
+    @media (min-width: $grid-sl) {
+        padding: 80px 100px;
+    }
+
+    @media (min-width: $grid-lm) {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 80px 100px 100px;
+    }
+}
+
+.neighborSection__head {
+    margin: 0 0 40px;
+
+    @media (min-width: $grid-ls) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    @media (min-width: $grid-lm) {
+        margin: 0 0 66px;
+    }
+}
+
+.neighborSection__lead {
+    margin: 0 0 0 -30px;
+
+    @media (min-width: $grid-sl) {
+        margin: 0 0 0 -100px;
+    }
+
+    @media (min-width: $grid-ls) {
+        margin: 0 -100px 0 auto;
+        padding: 0 100px 0 0;
+
+        order: 1;
+
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
+.neighborSection__heading {
+    margin: 20px 0 0;
+
+    font: 700 32px/1.3 "Panton", sans-serif;
+
+    @media (min-width: $grid-ls) {
+        margin: 0;
+    }
+}
+
+.neighborSection__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media (min-width: $grid-ls) {
+        max-height: 240px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: $grid-lm) {
+        max-height: 170px;
+    }
+}
+
+.neighborSection__item {
+    display: flex;
+    align-items: baseline;
+}
+
+.neighborSection__itemNum {
+    margin: 0 25px 0 0;
+
+    font-size: 18px;
+    color: $red;
+}
+
+.neighborSection__itemLink {
+    color: $darkgrey;
+
+    &:hover,
+    &:active {
+        color: $red;
+
+        opacity: 1;
+    }
+}

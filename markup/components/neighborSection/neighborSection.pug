@@ -1,0 +1,23 @@
+- var neighborSection__array = ["CMAP Initiative", "Duck Inn", "Zaytune Mediterranean Grill", "Stix and Brix", "Jakalope", "Bridgeport Coffee", "Lumpen", "Co-Prosperity", "Alderman’s office"]
+
+mixin neighborSection__listMixin(str, count)
+    - var num = count + 1;
+    - if (num < 10) num = "0" + num;
+    li.neighborSection__item
+        span.neighborSection__itemNum
+            | #{num}
+        a.neighborSection__itemLink.link(href="#")
+            | #{str}
+            span 
+                | →
+
+section.neighborSection
+    .neighborSection__inner
+        .neighborSection__head
+            b.neighborSection__lead.sectionHeading
+                | explore
+            h2.neighborSection__heading
+                | Neighborhood & Community Resources
+        ul.neighborSection__list
+            each item, count in neighborSection__array
+                +neighborSection__listMixin(item, count)

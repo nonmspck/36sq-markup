@@ -10,3 +10,5 @@ main.indexContent#main
     include ../matchSection/matchSection.pug
     
     include ../contactForm/contactForm.pug
+    - var indexContactForm__heading = "Contact Us"
+    +contactForm__mixin(indexContactForm__heading)

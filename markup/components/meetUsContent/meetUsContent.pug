@@ -5,6 +5,12 @@ main.meetUsContent#main
 
     include ../squadGalSection/squadGalSection.pug
 
-    
+    include ../availableSection/availableSection.pug
+
+    include ../neighborSection/neighborSection.pug
+
+    - var meetUsContactForm__heading = "Step right up and get your tour"
+    include ../contactForm/contactForm.pug
+    +contactForm__mixin(meetUsContactForm__heading)
 
     include ../schedulePageSection/schedulePageSection.pug

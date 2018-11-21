@@ -1,5 +1,8 @@
 .squadGalSection {
-    border: 1px solid $lightgrey-2;
+    border: {
+        top: 1px solid $lightgrey-2;
+        bottom: 1px solid $lightgrey-2;
+    }
 
     font: 400 16px/2 "Panton", sans-serif;
     color: rgba($darkgrey, .7);
